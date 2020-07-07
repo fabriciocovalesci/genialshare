@@ -7,36 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static '/css/estilos.css' %}">
-    <link rel="stylesheet" href="{% static '/fontawesome/css/all.css' %}">
-        <title>Loja Virtual</title>
+
+        <title>GenialShare</title>
 </head>
 
 <body>
-    <div class="navbar navbar-expand-lg  navbar-dark bg-dark">
-        <span class="navbar-text navbar-brand mb-0 h1"><a href="{% url 'home' %}">Home</a></span>
-        <span class="navbar-text navbar-brand mb-0 h1"><a href="{% url 'produtos' %}">Produtos</a></span>
-        {% if user.is_authenticated %}
-        <span class="navbar-text navbar-brand mb-0 h1"><a href="{% url 'cadastro_produtos' %}">Cadastro produtos</a></span>
-        {% endif %}
+    <div>
+        <strong>Menu:</strong>
+        <ul>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
+            <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
+            {% else %}
+            <li><a href="{% url 'account_login' %}">Sign In</a></li>
+            <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+            {% endif %}
+        </ul>
     </div>
+      
   
-    {% block content %}
-    <ul class="sidebar-nav">
-        {% if user.is_authenticated %}
-        <li class="lead">Usuário: {{ user.get_username }}</li>
-        <li class="lead"><a href="{% url 'logout' %}?next={{request.path}}">Logout</a></li>
-        {% else %}
-        <li class="lead"><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
-        {% endif %}
-    </ul>
-
-    {% endblock %}
+<h2>ola</h2>
 
 
-<script src="{% static '/js/jquery.js' %}"></script>
-<script src="{% static '/js/adiciona_item.js' %}"></script>
-<script src="{% static '/js/finalizando_compra.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>

@@ -4,11 +4,11 @@ from django.conf.urls.static import static
 from . import views as v
 
 urlpatterns = [
-    path('', v.home, name='home'),
-    path('accounts/', include('allauth.urls')),
+    path('', v.home),
+    
     path('accounts/', include('django.contrib.auth.urls')),
     path('register/', v.Login.as_view(), name='register'),
-    
+    path('accounts/', include('allauth.urls')), 
     # path('produtos/new/', v.cadastrar_produto, name='cadastro_produtos'),
     # path('produtos/', v.produtos, name='produtos'),
     # path('produtos/<int:pk>/', v.produtos_detalhe, name='produtos_detalhe'),
