@@ -1,5 +1,4 @@
-.img_blog{
-    width: 100%;
-    height: calc(100vh - 55px);
+.texto {
+    font-family: 'Courier New', Courier, monospace;
+    size: 15px;
 }
-
