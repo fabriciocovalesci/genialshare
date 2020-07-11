@@ -24,3 +24,11 @@ header{
     opacity: 100%;
     color: black;
 }
+
+.texto{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+}
