@@ -13,7 +13,7 @@ from django.http import JsonResponse
 
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'base.html')
 
     
 class Login(generic.CreateView):

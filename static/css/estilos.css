@@ -1,4 +1,26 @@
-.texto {
+header{
+    background-color: #808080;
+}
+.titulo {
+    font-family: fantasy;
+    size: 13px;
+    opacity: 70%;
+    text-align: center !important;
+}
+
+.titulo:hover{
+    opacity: 100%;
+}
+
+.nav-titulo{
     font-family: 'Courier New', Courier, monospace;
-    size: 15px;
+    opacity: 70%;
+    text-align: center !important;
+    color: #000000;
+}
+
+.nav-titulo:hover{
+    text-decoration: underline;
+    opacity: 100%;
+    color: black;
 }
