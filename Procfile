@@ -1,1 +1,1 @@
-web: gunicorn genialshare.wsgi --log-file -
+web: gunicorn core.wsgi --log-file -
