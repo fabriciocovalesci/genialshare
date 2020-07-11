@@ -32,3 +32,25 @@ header{
     justify-content: center;
 
 }
+
+
+.descricao-footer{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    opacity: 85%;
+    text-align: center;
+}
+
+footer {
+    background-color: #A9A9A9;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+
