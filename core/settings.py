@@ -7,7 +7,7 @@ from dj_database_url import parse as db_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-    SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
