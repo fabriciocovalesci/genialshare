@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
+from core.artigo.models import Artigo
 
 def home(request):
-    return render(request, 'base.html')
+    post = Artigo.objects.all()
+    return render(request, 'base.html', {'post' : post})
 
 def about(request):
     return render(request, 'about.html')

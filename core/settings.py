@@ -166,18 +166,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
-CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
-
-CKEDITOR_IMAGE_BACKEND = 'pillow'
-
-CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor"
-
-CKEDITOR_RESTRICT_BY_USER = True
-
 CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'Advanced',
-        'width': 758,
-        'height': 300,
+    'awesome_ckeditor': {
+        'toolbar': 'Basic',
     },
 }
+
