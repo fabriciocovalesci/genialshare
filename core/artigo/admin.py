@@ -1,3 +1,6 @@
 from django.contrib import admin
+from core.artigo.models import Artigo
 
-# Register your models here.
+
+
+admin.site.register(Artigo)

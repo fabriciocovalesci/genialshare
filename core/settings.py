@@ -26,6 +26,10 @@ INSTALLED_APPS = [
     'core.tutorial',
     'core.artigo',
 
+    'ckeditor',
+    'ckeditor_uploader',
+
+
     'crispy_forms',
     
     
@@ -161,3 +165,4 @@ CSRF_COOKIE_SECURE=True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+CKEDITOR_UPLOAD_PATH = "uploads/"

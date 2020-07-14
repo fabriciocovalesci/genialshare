@@ -1,11 +1,14 @@
+
+
 header{
-    background-color: #808080;
+    background-color: #e9ecef;
 }
 .titulo {
     font-family: fantasy;
     size: 13px;
     opacity: 70%;
     text-align: center !important;
+
 }
 
 .titulo:hover{
@@ -33,6 +36,11 @@ header{
 
 }
 
+.subtitulo{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+}
 
 .descricao-footer{
     font-family: 'Courier New', Courier, monospace;
