@@ -29,7 +29,6 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
 
-
     'crispy_forms',
     
     
@@ -166,3 +165,7 @@ CSRF_COOKIE_SECURE=True
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+CKEDITOR_IMAGE_BACKEND = 'pillow'
