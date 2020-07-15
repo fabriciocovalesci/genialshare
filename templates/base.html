@@ -44,25 +44,10 @@
     
 {% block content %}
 
-{% for artigo in post %}
-<h2>{{ artigo.titulo }}</h2>
-<br>
-<h5>{{ artigo.autor }}</h5>
-<h6>{{ artigo.data_criacao }}</h6>
-<br>
-<p>{{ artigo.resumo }}</p>
-<br>
-<p>{{ artigo.conteudo }}</p>
-<br>
-{% if artigo.foto %}
-<img src="{{ artigo.foto.url }}" class="card-img-top">
-{% endif %}
 
 
 
 
-
-{% endfor %}
 
 {% endblock %}
 
