@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="../static/css/estilos.css">
 <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Nixie+One&display=swap" rel="stylesheet">       
 <link rel="shortcut icon"  type="image/x-icon" href="../static/img/favicon.ico">
+<link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
 <title>GenialShare</title>
 </head>
 
@@ -40,7 +41,6 @@
     </div>
   </header>
 
-
     
 {% block content %}
 
@@ -54,10 +54,12 @@
 <br>
 <p>{{ artigo.conteudo }}</p>
 <br>
-<img src="{{ artigo.foto }}" alt="" srcset="">
+{% if artigo.foto %}
+<img src="{{ artigo.foto.url }}" class="card-img-top">
+{% endif %}
 
 
-  
+
 
 
 {% endfor %}
@@ -67,7 +69,7 @@
 <footer>
 <p class="descricao-footer">by Fabrício L. Covalesci</p>
 </footer>
-
+    <script src="https://use.fontawesome.com/89ff2dd30b.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
