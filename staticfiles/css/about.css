@@ -12,3 +12,9 @@
     margin: 10px;
     padding: 10px;
 }
+
+.nome {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+}
