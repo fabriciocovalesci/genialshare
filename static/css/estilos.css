@@ -49,6 +49,12 @@ header{
     text-align: center;
 }
 
+.descricao-footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
 footer {
     background-color: #C0C0C0;
     width: 100%;
