@@ -1,0 +1,20 @@
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.descricao{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nome {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+}
