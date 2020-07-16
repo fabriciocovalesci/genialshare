@@ -28,13 +28,13 @@
 
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active nav-titulo" href="#">Home</a>
+          <a class="nav-link active nav-titulo" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-titulo" href="#">Artigos</a>
+          <a class="nav-link nav-titulo" href="{% url 'artigos' %}">Artigos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-titulo" href="#">Tutorias</a>
+          <a class="nav-link nav-titulo" href="{% url 'tutoriais' %}">Tutoriais</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-titulo" href="{% url 'about' %}">About</a>
@@ -46,12 +46,11 @@
     </div>
   </header>
 
+
+ 
     
 {% block content %}
-
-
-
-
+<h4 class="texto">Blog em construção !!</h4>
 
 
 {% endblock %}
