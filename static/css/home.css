@@ -8,3 +8,11 @@
     display: flex;
     justify-content: center;
 }
+
+.img-test{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
