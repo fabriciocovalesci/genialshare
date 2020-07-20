@@ -3,7 +3,7 @@ from core.artigo.models import Artigo
 
 def home(request):
     post = Artigo.objects.all()
-    return render(request, 'base.html', {'post' : post})
+    return render(request, 'home.html')
 
 
 def artigos(request):
