@@ -3,11 +3,17 @@
 header{
     background-color: #D3D3D3;
 }
+
+#link-titulo{
+    text-decoration: none;
+}
+
 .titulo {
     font-family: fantasy;
     size: 13px;
     opacity: 70%;
     text-align: center !important;
+    color: black;
 
 }
 
