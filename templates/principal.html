@@ -1,0 +1,32 @@
+{% extends 'blog.html' %}
+
+
+{% block content_principal %}
+
+<h3 class="pb-3 mb-4 font-italic border-bottom">
+</h3>
+
+{% for post in posts %}
+
+
+<div class="blog-post">
+    <h2 class="blog-post-title">
+        <a href="/posts/{{ post.pk }}"> {{ post.titulo }}</a></h2>
+
+    <p class="blog-post-meta">{{ post.data_criacao }}<a href="#">{{ post.autor.get_full_name }}</a></p>
+
+    <p>{{ post.resumo }}.</p>
+
+
+    <br>
+
+</div><!-- /.blog-post -->
+
+{% endfor %}
+
+<nav class="blog-pagination">
+    <a class="btn btn-outline-primary" href="#">Older</a>
+    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+</nav>
+
+{% endblock %}
