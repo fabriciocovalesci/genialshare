@@ -12,6 +12,13 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    color: black;
+    color: black !important;
     font-size: 15px;
+}
+
+
+a:link 
+{ 
+ text-decoration:none; 
+ color: black !important;
 }

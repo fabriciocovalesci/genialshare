@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="../static/css/blog.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static '/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="shortcut icon"  type="image/x-icon" href="{% static '/img/favicon.ico' %}">
+
 
   </head>
 
@@ -67,14 +69,16 @@
         <aside class="col-md-4 blog-sidebar">
           <div class="p-3 mb-3 bg-light rounded">
             <h4 class="font-italic">About</h4>
-            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p class="mb-0 about-text">Sou estudante de Análise e Desenvolvimento de Sistemas, pelo <a href="https://ifrs.edu.br/sertao/">Instituto Federal de Educação, 
+              Ciência e Tecnologia do Rio Grande do Sul - Campus Sertão</a>, entusiasta por novas tecnologias, 
+          principalmente sobre <em>Ciência de Dados.</em></p>
           </div>
 
           <div class="p-3">
             <h4 class="font-italic">Archives</h4>
             <ol class="list-unstyled mb-0">
-              <li><a href="#">March 2014</a></li>
-              <li><a href="#">February 2014</a></li>
+              <li><a href="{% url 'artigos' %}">July 2020</a></li>
+              <!-- <li><a href="#">February 2014</a></li>
               <li><a href="#">January 2014</a></li>
               <li><a href="#">December 2013</a></li>
               <li><a href="#">November 2013</a></li>
@@ -84,7 +88,7 @@
               <li><a href="#">July 2013</a></li>
               <li><a href="#">June 2013</a></li>
               <li><a href="#">May 2013</a></li>
-              <li><a href="#">April 2013</a></li>
+              <li><a href="#">April 2013</a></li> -->
             </ol>
           </div>
 

@@ -93,6 +93,12 @@
       font-size: 3.5rem;
     }
   }
+
+
+  /* About  lateral */
+  .about-text{
+    text-align: justify !important;
+  }
   
   /* Pagination */
   .blog-pagination {
